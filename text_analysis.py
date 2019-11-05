@@ -61,7 +61,7 @@ class Histogram():
         for word in range(total_words):
             last_word = self.histogram[word][0]
             running_count += self.histogram[word][1]
-            if running_count >= target: # if we have passed the target with our count, we return the last word we used
+            if running_count > target: # if we have passed the target with our count, we return the last word we used
                 return last_word
 
 def test_sample(histogram):
