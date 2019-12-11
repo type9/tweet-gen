@@ -39,13 +39,10 @@ class TweetMarkovGen():
     def clean_sample(self, sample):
         final = str()
 
-        print(f'BEFORE CLEAN: {sample}')
-
         sample = BeautifulSoup(sample, features='lxml') # converts sample into a BS4 object
         final = sample.get_text()
         final = self.remove_urls(final)
 
-        print(f'AFTER CLEAN: {final}')
         return final
 
     def add_startstop(self, sentence):
@@ -89,7 +86,7 @@ def main():
     order = int(arguments[2])
 
     my_markov = TweetMarkovGen(user, sample_size, order)
-    print(my_markov.gen_sentence())
+    print(f'\n{my_markov.gen_sentence()}')
 
 if __name__ == '__main__':
     main()
