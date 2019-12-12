@@ -4,7 +4,7 @@ import re
 import nltk
 import json
 
-from tuple_markovchain import MarkovChain
+from dependencies.tuple_markovchain import MarkovChain
 
 from nltk.tokenize import sent_tokenize, TweetTokenizer
 

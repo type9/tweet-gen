@@ -1,7 +1,7 @@
 import copy
 
-from dictogram import Dictogram
-from custom_queue import Queue
+from dependencies.dictogram import Dictogram
+from dependencies.custom_queue import Queue
 
 class Node(Dictogram):
     def __init__(self, word):
