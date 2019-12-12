@@ -1,4 +1,4 @@
-from dependencies.linkedlist import LinkedList
+from linkedlist import LinkedList
 
 class Queue(LinkedList):
     
